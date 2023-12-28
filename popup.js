@@ -41,7 +41,7 @@ function removeSite(site) {
   var password = prompt("Enter your password to remove the website from the blacklist:");
 
   // Check if the password is correct
-  if (password === "your-password-here") { // Replace "your_password_here" with your actual password
+  if (password === "your_password_here") { // Replace "your_password_here" with your actual password
     chrome.storage.sync.get({ blockedSites: [] }, function (result) {
       var blockedSites = result.blockedSites;
       var index = blockedSites.indexOf(site);
