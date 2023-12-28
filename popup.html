@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Blocker</title>
+    
+    <style>
+      body {
+        width: 200px;
+      }
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+      li {
+        padding: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Blocked Websites</h2>
+    <ul id="blockedList"></ul>
+    <input type="text" id="newSiteInput" placeholder="Enter website">
+    <button id="addToBlacklist">Add to blacklist</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
